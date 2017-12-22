@@ -1,5 +1,8 @@
 
-
+body {
+	max-width: 1250px;
+	min-width: 950px;
+	margin: 0 auto;}
 
 
 #header {
@@ -25,35 +28,37 @@
 #bigPic{
 	width: 100%;
 	min-height: 40%;
-	max-height: 600px;
+	max-height: 400px;
 	border: 1px solid red;
 	position: relative;
 
 }
 
 #mainPic {
-	background-color: purple;
-	background-blend-mode: puprle;
 	min-width:  100%;
-	max-height: 600px;
+	max-height: 400px;
+	object-fit: cover;
+/* 	opacity: 0.85;  */
 }
+
 
 h1 {
 	position: absolute;
 	margin: auto auto;
-	top: 35%;
-    left: 20%;
+	top: 70%;
+    left: 5%;
     right: 0;
     bottom: 0;
-    color: black;
+    color: white;
 	font-size: 6em;
+	text-align: center;
 }
 
 #content {
 	width: 100%;
 	max-height: 50%;
 	min-height: 30%;
-	height: 400px;
+	height: 600px;
 	border: 1px solid brown;
 }
 
@@ -65,10 +70,42 @@ h1 {
 }
 
 .date {
-	background-color: blue;
+	background-color: #D5C0D9;
 	width:  40%;
-	margin: 5% 5%;
+	max-height: 800px;
+	margin: 2% 5%;
 	float: left;
 	height: 40%;
+	position: relative;
+	border-radius: 5%;
+	box-shadow: 3px 3px 5px 6px gray; 
 
+}
+
+.images {	
+	max-width:  100%;
+	max-height: 100%;
+	border-radius: 5%;
+	position: absolute;
+	top: 0;
+	right:  0;
+}
+
+.imgText {
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.button {
+	margin-top: -3%;
+}
+
+.size2em {
+	font-size:  2.5em;
+	color:  red;
+	margin-top: 2%;
 }
