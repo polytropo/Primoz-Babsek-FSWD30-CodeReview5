@@ -1,0 +1,1 @@
+var dates = document.querrySelectorAll(".date");

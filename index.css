@@ -1,0 +1,74 @@
+
+
+
+
+#header {
+	width: 100%;
+	min-height:  10%;
+	height: 100px;
+	border: 1px solid green;
+	background-color: #7B248A;
+	text-align:  center;
+	position: relative;
+	
+}
+
+#logo {
+	position: absolute;
+    margin: auto auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#bigPic{
+	width: 100%;
+	min-height: 40%;
+	max-height: 600px;
+	border: 1px solid red;
+	position: relative;
+
+}
+
+#mainPic {
+	background-color: purple;
+	background-blend-mode: puprle;
+	min-width:  100%;
+	max-height: 600px;
+}
+
+h1 {
+	position: absolute;
+	margin: auto auto;
+	top: 35%;
+    left: 20%;
+    right: 0;
+    bottom: 0;
+    color: black;
+	font-size: 6em;
+}
+
+#content {
+	width: 100%;
+	max-height: 50%;
+	min-height: 30%;
+	height: 400px;
+	border: 1px solid brown;
+}
+
+#footer {
+	width: 100%;
+	max-height: 10%;
+	height: 300px;
+	border: 1px solid blue;
+}
+
+.date {
+	background-color: blue;
+	width:  40%;
+	margin: 5% 5%;
+	float: left;
+	height: 40%;
+
+}
