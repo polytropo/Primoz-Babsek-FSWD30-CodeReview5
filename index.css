@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	min-height:  10%;
 	height: 100px;
-	border: 1px solid green;
+
 	background-color: #7B248A;
 	text-align:  center;
 	position: relative;
@@ -29,7 +29,7 @@ body {
 	width: 100%;
 	min-height: 40%;
 	max-height: 400px;
-	border: 1px solid red;
+
 	position: relative;
 
 }
@@ -59,14 +59,13 @@ h1 {
 	max-height: 50%;
 	min-height: 30%;
 	height: 600px;
-	border: 1px solid brown;
+
 }
 
 #footer {
 	width: 100%;
 	max-height: 10%;
-	height: 300px;
-	border: 1px solid blue;
+	text-align: center;
 }
 
 .date {
@@ -101,11 +100,15 @@ h1 {
 }
 
 .button {
-	margin-top: -3%;
+	margin-top: 0%;
+	margin-bottom:  0%;
+	border-radius: 10px;
+	font-size: 1.5em;
+	background-color: skyblue;
 }
 
 .size2em {
 	font-size:  2.5em;
 	color:  red;
-	margin-top: 2%;
+	margin-top: 0%;
 }
