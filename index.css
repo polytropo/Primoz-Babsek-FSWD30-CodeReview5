@@ -1,19 +1,16 @@
-
 body {
 	max-width: 1250px;
 	min-width: 950px;
-	margin: 0 auto;}
-
+	margin: 0 auto;
+}
 
 #header {
 	width: 100%;
 	min-height:  10%;
 	height: 100px;
-
 	background-color: #7B248A;
 	text-align:  center;
-	position: relative;
-	
+	position: relative;	
 }
 
 #logo {
@@ -29,16 +26,13 @@ body {
 	width: 100%;
 	min-height: 40%;
 	max-height: 400px;
-
 	position: relative;
-
 }
 
 #mainPic {
 	min-width:  100%;
 	max-height: 400px;
 	object-fit: cover;
-/* 	opacity: 0.85;  */
 }
 
 
@@ -59,7 +53,6 @@ h1 {
 	max-height: 50%;
 	min-height: 30%;
 	height: 600px;
-
 }
 
 #footer {
@@ -78,7 +71,6 @@ h1 {
 	position: relative;
 	border-radius: 5%;
 	box-shadow: 3px 3px 5px 6px gray; 
-
 }
 
 .images {	

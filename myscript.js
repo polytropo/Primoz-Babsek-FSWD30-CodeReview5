@@ -1,103 +1,74 @@
-var dates = document.querySelectorAll(".date");
-
-myArray = ["12345", "67890", "1234567891", "cetrtidel"];
-
-// function myFunc(){
-// 	for (i = 0; i < myArray.length; i++) {
-// 		console.log(myArray[i]);
-// 		document.createElement("p").className = ".date";
-// 		var theDiv = document.getElementById("content");
-// 		var content = document.createTextNode(myArray[i]);
-// 		theDiv.appendChild(content);
-// 	}
-
-// }
-
-// myFunc()
 var counter1 = 0;
 var counter2 = 0;
 var counter3 = 0;
 var counter4 = 0; 
-		var Persons = [
-            {
-				name: 'John',
-				surname: 'Doe',
-				favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
-				age: 25,
-   				myPhoto: "img/picman1.jpg",	
-				likes: counter1,    // numeric property used to store likes
-				myId : "firstperson",
-				likeId : "person1",
-				
-			},
-			/* create at least 3 other persons by yourself */
-    		{
-				name: 'Jonas',
-				surname: 'Potato',
-				favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
-				age: 35,
-   				myPhoto: "img/picman2.jpg",	
-				likes: counter2,    // numeric property used to store likes
-				myId : "secondperson",
-				likeId : "person2",
-			
-			},
 
-    		{
-				name: 'Clara',
-				surname: 'Mashmallow',
-				favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
-				age: 29,
-	   			myPhoto: "img/picwoman1.jpg",	
-				likes: counter3,    // numeric property used to store likes
-				myId : "thirdperson",
-				likeId : "person3",
+var Persons = [
+    {
+		name: 'John',
+		surname: 'Doe',
+		favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+		age: 25,
+		myPhoto: "img/picman1.jpg",	
+		likes: counter1,
+		myId : "firstperson",
+		likeId : "person1",	
+	},
 
-			},
+	{
+		name: 'Jonas',
+		surname: 'Potato',
+		favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+		age: 35,
+		myPhoto: "img/picman2.jpg",	
+		likes: counter2,    
+		myId : "secondperson",
+		likeId : "person2",
+	},
 
-    		{
-				name: 'Petra',
-				surname: 'Highheel',
-				favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
-				age: 24,
-	   			myPhoto: "img/picwoman2.jpg",	
-				likes: counter4,    // numeric property used to store likes
-				myId : "fourthperson",
-				likeId : "person4",
+	{
+		name: 'Clara',
+		surname: 'Mashmallow',
+		favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+		age: 29,
+		myPhoto: "img/picwoman1.jpg",	
+		likes: counter3,
+		myId : "thirdperson",
+		likeId : "person3",
+	},
 
-			},
+	{
+		name: 'Petra',
+		surname: 'Highheel',
+		favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+		age: 24,
+		myPhoto: "img/picwoman2.jpg",	
+		likes: counter4,
+		myId : "fourthperson",
+		likeId : "person4",
+	},
 ];
 
 for (i = 0; i < Persons.length; i++) {
 	myContent(Persons[i].myPhoto, Persons[i].name, Persons[i].surname, Persons[i].age, Persons[i].myId, Persons[i].likeId);
 }
-// myContent("img/picman1.jpg", "John", "Doe", 25, "firstperson", "person1");
-// myContent("img/picman2.jpg", "Jonas", "Potato", 35, "secondperson", "person2");
-// myContent("img/picwoman1.jpg", "Clara", "Mashmallow", 29, "thirdperson", "person3");
-// myContent("img/picwoman2.jpg", "Petra", "Highheel", 24, "fourthperson", "person4");
-
 
 function myContent(imgsrc, name, lastName, age, myId, likeId){
 
-	// gets a reference to the div of id="content":
-	var div = document.getElementById('content');
-	    // creates a new img element:
 	var	img = document.createElement('img');
 	var myDiv = document.createElement('div');
 	myDiv.setAttribute("class", "date");
 	img.setAttribute("class", "images");
-	// ---------------------
-	var	p1 = document.createElement('p');
 
+	var	p1 = document.createElement('p');
 	var	text = document.createTextNode("Name: ");
 	var spanName = document.createElement("span");
 	spanName.setAttribute("class", "strong");
 	var myName = document.createTextNode(name);
 	spanName.appendChild(myName);
 	p1.setAttribute("class", "imgText");
-	// -------------------------------------
-	var	p2 = document.createElement('p');
 
+	var	p2 = document.createElement('p');
 	var	text2 = document.createTextNode("Last Name: ");
 	var spanName2 = document.createElement("span");
 	spanName2.setAttribute("class", "strong");
@@ -105,7 +76,6 @@ function myContent(imgsrc, name, lastName, age, myId, likeId){
 	spanName2.appendChild(myName2);
 	p2.setAttribute("class", "imgText");
 
-	// -------------------------------
 	var	p3 = document.createElement('p');
 	var	text3 = document.createTextNode("Age: ");
 	var spanName3 = document.createElement("span");
@@ -119,8 +89,8 @@ function myContent(imgsrc, name, lastName, age, myId, likeId){
 	button.setAttribute("class", "button imgText");
 	button.appendChild(buttonText);
 	button.setAttribute("id", myId);
-		button.addEventListener("click", function (){
-		console.log(myId + " button was clicked!");
+	
+	button.addEventListener("click", function (){
 		var likes = document.getElementById(likeId);
 		likes.setAttribute("class", "imgText size2em")
 		if(myId === "firstperson") {
@@ -138,11 +108,6 @@ function myContent(imgsrc, name, lastName, age, myId, likeId){
 			counter4 +=1;
 			likes.innerHTML = counter4 +  " <img src='img/like.png' alt='heart'>";
 		}
-		
-		console.log("person1: " + counter1);
-		console.log("person2: " + counter2);
-		console.log("person3: " + counter3);
-		console.log("person4: " + counter4);
 	})
 	
 	pLikes = document.createElement("p");
@@ -151,46 +116,28 @@ function myContent(imgsrc, name, lastName, age, myId, likeId){
 	imgLikes.src = "img/like.png"
 	pLikes.appendChild(likesText);
 	pLikes.setAttribute("id", likeId);
-	// pLikes.appendChild(imgLikes);
-	// img.setAttribute("class", "images");
 
 	img.src = imgsrc;
-
+	myDiv.appendChild(img);
+	
 	p1.appendChild(text);
 	p1.appendChild(spanName);
 	myDiv.appendChild(p1);
-	myDiv.appendChild(img);
+
 	p2.appendChild(text2);
 	p2.appendChild(spanName2);
 	myDiv.appendChild(p2);
+	
 	p3.appendChild(text3);
 	p3.appendChild(spanName3);
-	pLikes.appendChild
 	myDiv.appendChild(p3);
+
+	pLikes.appendChild
+
+
 	var buttonEvent = myDiv.appendChild(button);
 	myDiv.appendChild(pLikes)
 
-	div.appendChild(myDiv);
-	
+	var div = document.getElementById('content');
+	div.appendChild(myDiv);	
 }
-
-// myContent("img/picman1.jpg", "John", "Doe", 25, "firstperson", "person1");
-// myContent("img/picman2.jpg", "Jonas", "Potato", 35, "secondperson", "person2");
-// myContent("img/picwoman1.jpg", "Clara", "Mashmallow", 29, "thirdperson", "person3");
-// myContent("img/picwoman2.jpg", "Petra", "Highheel", 24, "fourthperson", "person4");
-// var name = "John";
-// var lastName = "Doe";
-// var age = "25";
-
-// var myName = "Name: <strong>" + name + "</strong><br>";
-// var mySurname = "Surname: <strong>" + lastName + "</strong><br>"; 
-// var myAge = "Age: <strong>" + age + "</strong><br>";
-// var myText = myName + mySurname + myAge + myText;
-
-
-// var new_row = document.createElement("div");
-// new_row.setAttribute("class", "aClassName" );
-// // Add some text
-// new_row.appendChild( document.createTextNode("Some text") );
-// // Add it to the document body
-// document.body.appendChild( new_row );
